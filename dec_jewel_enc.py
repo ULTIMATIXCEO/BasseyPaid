@@ -49,33 +49,7 @@ cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 # CLEAR
 def clear():
 	os.system('clear')
-# BACK
-def back():
-	login()
-def chk(): 
-  uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "|".join(uuid) 
-  print("\n\n\x1b[37;1m  YOUR ID : "+id) 
-  try: 
-    httpCaht = requests.get("https://raw.githubusercontent.com/JEWELFUND/XBADDO/Approval.txt").text 
-    if id in httpCaht: 
-      print("\033[92m  WELCOME PAID USER ENJOYðŸ’ƒðŸ’ƒ. .......\033[97m") 
-      msg = str(os.geteuid()) 
-      time.sleep(1) 
-      pass 
-    else: 
-      print("\x1b[91m YOUR ID IS NOT ACTIVEðŸ˜¡ SEND MESSAGE ON WHATSAPP\033[97m") 
-      os.system('xdg-open https://wa.me/+2347052802953')
-      time.sleep(1) 
-      sys.exit() 
-  except: 
-    sys.exit() 
-    if name == 'Approval.txt': 
-     print (logo)
-     chk() 
-    
-chk()
-os.system('clear')
+
 # BANNER
 def banner():
 	clear()
